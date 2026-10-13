@@ -1,0 +1,113 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "kendaraan = [\"Ferrari\", \"Mobil\", \"3000cc\", \"Pink\", \"4roda\"]\n",
+        "print(\"list awal: \")\n",
+        "print(kendaraan)\n",
+        "\n",
+        "# menambahkan harga dan tipe kendaraan di belakang\n",
+        "kendaraan.append(\"10 Miliar\")\n",
+        "kendaraan.append(\"GTB\")\n",
+        "\n",
+        "# menambahkan merek kendaraan\n",
+        "kendaraan.insert(2, \"Ferrari\")\n",
+        "\n",
+        "print(\"\\nlist kendaraan setelah ditambahkan: \")\n",
+        "print(kendaraan)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kdIU6g3NHPsJ",
+        "outputId": "d87d3864-866b-4522-a60d-eeb9dba3de6c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "list awal: \n",
+            "['Ferrari', 'Mobil', '3000cc', 'Pink', '4roda']\n",
+            "\n",
+            "list kendaraan setelah ditambahkan: \n",
+            "['Ferrari', 'Mobil', 'Ferrari', '3000cc', 'Pink', '4roda', '10 Miliar', 'GTB']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Silakan pilih bangun datar\")\n",
+        "print(\"1. Persegi\")\n",
+        "print(\"2. Lingkaran\")\n",
+        "print(\"3. Segitiga\")\n",
+        "\n",
+        "pilih_bangun_datar = int(input(\"pilih bangun datar: \"))\n",
+        "\n",
+        "match pilih_bangun_datar:\n",
+        "    case 1:\n",
+        "       sisi = float(input(\"Masukkan sisi: \"))\n",
+        "       luas = sisi * sisi\n",
+        "       print(\"Luas Persegi =\", luas)\n",
+        "\n",
+        "    case 2:\n",
+        "        jari = float(input(\"Masukkan jari jari: \"))\n",
+        "        luas = 3.14 * jari ** 2\n",
+        "        print(\"Luas Lingkaran =\", luas)\n",
+        "\n",
+        "    case 3:\n",
+        "        alas = float(input(\"Masukkan alas: \"))\n",
+        "        tinggi = float(input(\"Masukkan tinggi: \"))\n",
+        "        luas = 0.5 * alas * tinggi\n",
+        "        print(\"Luas segitiga =\", luas)\n",
+        "\n",
+        "    case _:\n",
+        "        print(\"Kamu salah pilih\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Uw_bETnkSwhP",
+        "outputId": "7f14f4e1-d385-42ca-b5d5-d7077e490d08"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Silakan pilih bangun datar\n",
+            "1. Persegi\n",
+            "2. Lingkaran\n",
+            "3. Segitiga\n",
+            "pilih bangun datar: 2\n",
+            "Masukkan jari jari: 4\n",
+            "Luas Lingkaran = 50.24\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
